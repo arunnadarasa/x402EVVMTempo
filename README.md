@@ -2,6 +2,8 @@
 
 A demonstration of the [x402 payment protocol](https://x402.org) with **[@evvm/x402](https://github.com/EVVM-org/x402)** on **Tempo Testnet (Moderato)**, plus a second paid route using **[MPP](https://mpp.dev)** ([`mppx`](https://mpp.dev)) and **[purl](https://github.com/stripe/purl)** for agent-style HTTP clients.
 
+**Integration notes, lessons learned, and troubleshooting:** see [PROJECT_LOG.md](PROJECT_LOG.md).
+
 ## Two payment stacks (dual stack)
 
 | Stack | Endpoint | Wire format | Typical client |
