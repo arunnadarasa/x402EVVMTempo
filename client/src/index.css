@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+@keyframes float-green {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -20px) scale(1.1); }
+}
+
+@keyframes float-blue {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, 20px) scale(1.1); }
+}
+
+body {
+  font-family: var(--font-mono);
+  background: 
+    radial-gradient(ellipse 100% 60% at 20% 30%, #6ee7b7 0%, #a7f3d0 40%, transparent 70%),
+    radial-gradient(ellipse 80% 50% at 80% 40%, #93c5fd 0%, #dbeafe 50%, transparent 70%),
+    #f5f5f5;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #374151;
+}
+
+.gradient-green {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(ellipse 100% 60% at 20% 30%, #6ee7b7 0%, #a7f3d0 40%, transparent 70%);
+  animation: float-green 6s ease-in-out infinite;
+}
+
+.gradient-blue {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(ellipse 80% 50% at 80% 40%, #93c5fd 0%, #dbeafe 50%, transparent 70%);
+  animation: float-blue 8s ease-in-out infinite;
+}
+
+.rainbow-button {
+  font-family: var(--font-mono) !important;
+  font-size: 12px !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  background: #18181b !important;
+  border: none !important;
+  color: #ffffff !important;
+  padding: 10px 18px !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+}
+
+.rainbow-button:hover {
+  background: #27272a !important;
+}

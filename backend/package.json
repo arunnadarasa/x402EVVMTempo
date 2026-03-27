@@ -1,0 +1,23 @@
+{
+  "name": "nitro-app",
+  "private": true,
+  "scripts": {
+    "build": "nitro build",
+    "dev": "nitro dev",
+    "preview": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "h3": "^1.15.4",
+    "nitropack": "^2.12.4"
+  },
+  "dependencies": {
+    "@evvm/evvm-js": "^0.1.31",
+    "@evvm/x402": "^0.1.6",
+    "@x402/core": "^2.4.0",
+    "viem": "^2.47.6",
+    "mppx": "^0.4.11"
+  },
+  "overrides": {
+    "viem": "^2.47.6"
+  }
+}

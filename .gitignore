@@ -1,0 +1,9 @@
+node_modules
+.env
+.DS_Store
+
+# Build outputs
+dist/
+.output/
+backend/.nitro/
+client/dist/
